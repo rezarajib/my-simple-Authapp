@@ -4,11 +4,12 @@ import { NavLink } from 'react-router'
 const Navbar = () => {
 
     const links = <>
-           <nav>
-            <NavLink to={"/"}>HOME</NavLink>
-           <NavLink to={"/feature"}>FEATURES</NavLink>
-           <NavLink to={"/documentaion"}>DOCUMENTAION</NavLink>
-           <NavLink to={"/login"}>LOGIN</NavLink>
+           <nav className='flex justify-center gap-10 bg-transparent py-4'>
+            <NavLink to={"/"} className={({isActive}) => `font-semibold mr-1 ${isActive? "text-green-500 border border-green-500" : ""}`}>HOME</NavLink>
+           <NavLink to={"/feature"} className={({isActive}) => `font-semibold mr-1 ${isActive? "text-green-500 boder border-green-500" : ""}`}>FEATURES</NavLink>
+           <NavLink to={"/documentaion"} className={({isActive}) => `font-semibold mr-1 ${isActive? "text-green-500 boder border-green-500" : ""}`}>DOCUMENTAION</NavLink>
+           <NavLink to={"/login"} className={({isActive}) => `font-semibold mr-1 ${isActive ? "text-green-500 boder border-green-400" : ""}`}>LOGIN</NavLink>
+           <NavLink to={"/register"} className={({isActive}) => `font-semibold mr-1 ${isActive ? "text-green-500 border border-green-500" : ""}`}>Register</NavLink>
            
            </nav>
     </>
@@ -36,7 +37,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                   <button>START FREE</button>
+                   <button className='bg-transparent text-indigo-600 border border-indigo-600 hover:text-green-400 px-4 py-4'>START FREE</button>
                 </div>
             </div>
 

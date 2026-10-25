@@ -1,0 +1,83 @@
+// src/data/formData.js
+
+export const registerInputs = [
+  {
+    id: 1,
+    name: "firstName",
+    type: "text",
+    placeholder: "First Name",
+    errorMessage: "First name should be 2-20 characters!",
+    label: "First Name",
+    pattern: "^[A-Za-z]{2,20}$",
+    required: true,
+  },
+  {
+    id: 2,
+    name: "lastName",
+    type: "text",
+    placeholder: "Last Name",
+    errorMessage: "Last name should be 2-20 characters!",
+    label: "Last Name",
+    pattern: "^[A-Za-z]{2,20}$",
+    required: true,
+  },
+  {
+    id: 3,
+    name: "username",
+    type: "text",
+    placeholder: "Username",
+    errorMessage: "Username should be 3-16 characters!",
+    label: "Username",
+    pattern: "^[A-Za-z0-9]{3,16}$",
+    required: true,
+  },
+  {
+    id: 4,
+    name: "email",
+    type: "email",
+    placeholder: "Email",
+    errorMessage: "INVALID EMAIL ADDRESS.",
+    label: "Email",
+    required: true,
+  },
+  {
+    id: 5,
+    name: "password",
+    type: "password",
+    placeholder: "Password",
+    errorMessage: "Password requires 8-20 characters with letters & numbers!",
+    label: "Password",
+    pattern: `^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,20}$`,
+    required: true,
+  },
+  {
+    id: 6,
+    name: "confirmPassword",
+    type: "password",
+    placeholder: "Confirm Password",
+    errorMessage: "Passwords don't match!",
+    label: "Confirm Password",
+    required: true,
+  },
+];
+
+export const loginInputs = [
+  {
+    id: 1,
+    name: "email",
+    type: "email",
+    placeholder: "Email",
+    errorMessage: "INVALID EMAIL ADDRESS.",
+    label: "Email",
+    required: true,
+  },
+  {
+    id: 2,
+    name: "password",
+    type: "password",
+    placeholder: "Password",
+    errorMessage: "Password is required!",
+    label: "Password",
+    required: true,
+  },
+];
